@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'Accueil - CNI Lost & Found</title>
+    <link rel="stylesheet" href="CSS/inscription.css">
+</head>
+<body>
+
+    <!-- En-tête -->
+    <header>
+        <h1>Bienvenue sur CNI Lost & Found</h1>
+        <nav>
+            <ul>
+                <li><a href="Acceuil.html">Accueil</a></li>
+                <li><a href="inscription.html">S'inscrire</a></li>
+                <li><a href="connexion.html">Se connecter</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+        <section>
+            <h2>Bienvenue sur notre plateforme !</h2>
+            <p>
+                Si vous avez perdu votre Carte Nationale d'Identité (CNI) ou si vous avez retrouvé une CNI, vous êtes au bon endroit.
+                Nous vous offrons un moyen simple de signaler les pertes et les retrouvailles.
+            </p>
+        </section>
+
+        <!-- Formulaire d'inscription -->
+        <form action="register.php" method="POST">
+            <label for="kit_number">Numéro de kit :</label>
+            <input type="text" id="kit_number" name="kit_number" required><br>
+
+            <label for="user_name">Nom d'utilisateur :</label>
+            <input type="text" id="user_name" name="user_name" required><br>
+            
+            <label for="user_firstname">Prénom :</label>
+            <input type="text" id="user_firstname" name="user_firstname" required><br>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="phone_number">Numéro de téléphone :</label>
+            <input type="tel" id="phone_number" name="phone_number" required><br>
+            
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" required><br>
+
+            <a href="connexion.html">J'ai un compte !</a>
+          
+            <button type="submit">S'inscrire</button>
+        </form>
+
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2024 CNI Lost & Found - Tous droits réservés.
+                                  <br/>By Free_tech
+        </p>
+    </footer>
+
+</body>
+</html>

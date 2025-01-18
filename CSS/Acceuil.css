@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #0473ff;
+  padding: 20px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-contener {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #442601;
+  width: 77px;
+  height: 77px;
+  border-radius: 50%;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+h1 {
+  margin: 0;
+  font-size: 30px;
+  color: #f7f7f7;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-left: 100px;
+}
+
+nav li {
+  position: relative;
+}
+
+nav li a {
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  color: #333;
+  font-weight: bold;
+}
+
+nav li:hover > a {
+  background-color: #f0f0f0;
+}
+
+nav ul ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  display: none;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+nav ul ul li {
+  width: 200px;
+}
+
+nav li:hover > ul {
+  display: block;
+  opacity: 1;
+}
+
+nav ul ul li a {
+  padding: 10px;
+  color: #000;
+  font-weight: normal;
+}
+
+nav ul ul li a:hover {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: #0473ff;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #000409;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}

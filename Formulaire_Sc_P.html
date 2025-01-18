@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'Accueil - CNI Lost & Found</title>
+    <link rel="stylesheet" href="CSS/inscription.css">
+</head>
+<body>
+
+    <!-- En-tête -->
+    <header>
+        <h1>CNI Lost & Found</h1>
+        <nav>
+            <ul>
+                <li><a href="Acceuil.html">Accueil</a></li>
+                <li><a href="inscription.html">S'inscrire</a></li>
+                <li><a href="connexion.html">Se connecter</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+        <section>
+            <h2>Formulaire de signalement</h2>
+            <p>
+                Si vous avez perdu votre Carte Nationale d'Identité (CNI) ou votre reçu, vous êtes au bon endroit.
+                Veuillez remplir le formulaire !
+            </p>
+        </section>
+
+        <!-- Formulaire de signalement -->
+        <form action="Signal_p.php" method="POST">
+            <fieldset>
+                <legend>Signalez votre perte</legend>
+
+                <label for="kit_number">Numéro de kit :</label>
+                <input type="text" id="kit_number" name="kit_number" placeholder="Ex: 12345" required maxlength="10"><br>
+
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom" required><br>
+
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required><br>
+
+                <label for="date_naissance">Date de naissance :</label>
+                <input type="date" id="date_naissance" name="date_naissance" required><br>
+
+                <label for="lieux_naissance">Lieu de naissance :</label>
+                <input type="text" id="lieux_naissance" name="lieux_naissance" placeholder="Ex: Douala" required><br>
+
+                <label for="ville">Ville de la perte :</label>
+                <input type="text" id="ville" name="ville" placeholder="Ex: Yaoundé" required><br>
+
+                <label for="nom_commissariat">commissariat (si le statut de la CNI est retrouvee) :</label>
+                <input type="text" id="commissariat" name="nom_commissariat" placeholder="Ex: Mendong" required><br>
+                
+                <label for="statut">Statut :</label>
+                <input type="text" id="statut" name="statut_cni" placeholder="Perdue ou Retrouvee" required><br>
+            </fieldset>
+
+            <button type="submit">Signaler</button>
+        </form>
+
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2024 CNI Lost & Found - Tous droits réservés.
+                                  <br/>By Free_tech
+        </p>
+    </footer>
+
+</body>
+</html>
